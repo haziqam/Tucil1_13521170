@@ -1,6 +1,5 @@
 #include "header.hpp"
 
-const char allOps[TOTALOPS] = {'+', '-', '*', '/'};
 vector<vector<int>> numsPermutations;
 vector<vector<char>> opsPermutations;
 vector<string> savedResults;
@@ -45,6 +44,8 @@ void findNumberPermutation(vector<int>& container, int leftIdx, int rightIdx) {
 
 void findOpsPermutation() {
     vector<char> temp(3);
+    const char allOps[TOTALOPS] = {'+', '-', '*', '/'};
+    
     for (int i=0; i < TOTALOPS; i++) {
         for (int j=0; j < TOTALOPS; j++) {
             for (int k=0; k < TOTALOPS; k++) {

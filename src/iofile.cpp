@@ -114,7 +114,7 @@ void saveResultsToFile(int solutions) {
 
     cout << "Insert file name: ";
     cin >> fileName;
-    fout.open(fileName);
+    fout.open("test/" + fileName);
 
     if (!solutions) {
         fout << "No solutions found" << endl;

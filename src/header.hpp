@@ -10,7 +10,6 @@ using namespace std;
 // CONSTANTS
 #define TOTALNUMS 4
 #define TOTALOPS 4
-extern const char allOps[TOTALNUMS];
 
 // GLOBAL VARIABLES
 extern vector<vector<int>> numsPermutations;
@@ -23,12 +22,14 @@ vector<string> inputCardFromUser();
 vector<int> generateRandomCard();
 
 vector<int> getNumsVec();
+/* Gets input from user, validates the input, and converts the input into vector<int> */
 
 bool isInputValid(vector<string> inputs);
 
 bool isInputElmtValid(string input);
 
 int convertToInt(string input);
+/* Precondition: input string is already valid */
 
 void printResults();
 

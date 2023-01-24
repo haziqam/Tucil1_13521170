@@ -20,7 +20,6 @@ int main() {
         cout << "Invalid input!" << endl;
     }
     
-    
     using namespace std::chrono;
 
     high_resolution_clock::time_point start = high_resolution_clock::now();
