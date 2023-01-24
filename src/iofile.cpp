@@ -31,14 +31,14 @@ vector<string> inputCardFromUser() {
 }
 
 vector<int> generateRandomCard() {
-    const vector<string> cardOptions = {"A", "2", "3", "4", "5", "6", "7", "8", "9", "J", "Q", "K"};
+    const vector<string> cardOptions = {"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
     vector<int> randomCard(TOTALNUMS);
     int random;
 
     srand((unsigned) time(NULL));
     cout << "Your cards: " << endl;
     for (int i=0; i < TOTALNUMS; i++) {
-        random = rand() % 12;
+        random = rand() % 13;
         cout << cardOptions[random] << " ";
         randomCard[i] = convertToInt(cardOptions[random]);
     }
@@ -96,9 +96,9 @@ int convertToInt(string input) {
     if (input == "10") {return 10;}
     else if (input[0] - '0' > 1 && input[0] - '0' < 10) {return input[0] - '0';}
     else if (input[0] == 'A') {return 1;}
-    else if (input[0] == 'J') {return 10;}
-    else if (input[0] == 'Q') {return 11;}
-    else /* (input[0] == 'K') */ {return 12;}
+    else if (input[0] == 'J') {return 11;}
+    else if (input[0] == 'Q') {return 12;}
+    else /* (input[0] == 'K') */ {return 13;}
 }
 
 void printResults() {
