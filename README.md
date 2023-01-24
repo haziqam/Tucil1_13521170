@@ -49,5 +49,7 @@ Program ini akan menerima input pengguna berupa empat karakter yang merupakan ba
 
 ## Identitas author
 Nama    : Haziq Abiyyu Mahdy
+
 NIM     : 13521170
+
 Kelas   : K2
